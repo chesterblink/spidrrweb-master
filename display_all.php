@@ -36,7 +36,7 @@ include('functions/common_function.php');
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="display_all.php">Products</a>
@@ -84,7 +84,7 @@ include('functions/common_function.php');
 <!-- fetching products -->
     <?php
     // calling function
-get_products();
+get_all_products();
 get_categories();
 get_brands();
     ?>
@@ -117,8 +117,9 @@ getbrands();
 
 
 <!-- last child -->
-<!-- include footer -->
-<?php include("./includes/footer.php") ?>
+<div class="bg-info p-3 text-center">
+  <p>All Rights Reserved SPIDRR LLC © 2023 </p>
+</div>
     </div>
 
   <!-- bootstrap js link -->

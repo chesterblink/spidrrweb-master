@@ -36,7 +36,7 @@ include('functions/common_function.php');
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="display_all.php">Products</a>
@@ -81,10 +81,42 @@ include('functions/common_function.php');
   <div class="col-md-10">
     <!-- products -->
       <div class="row">
+
+        <div class="col-md-4">
+            <!-- card -->
+            <div class='card'>
+              <img src='./images/994.jpg' class='card-img-top' 
+              alt='$product_title'>
+              <div class='card-body'>
+                <h5 class='card-title'>$product_title</h5>
+                <p class='card-text'>$product_description</p>
+                <a href='#' class='btn btn-primary'>Add to Cart</a>
+                <a href='product_details.php? product_id=$product_id' 
+                class='btn btn-info'>Buy Now</a>
+              </div>
+    </div>
+        </div>
+          <div class="col-md-8">
+            <!-- related images -->
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="text-center text-info mb-5">Related 
+                Products</h4>
+              </div>
+              <div class="col-md-6">
+              <img src='./images/9.png' class='card-img-top' 
+              alt='$product_title'>
+              </div>
+              <div class="col-md-6">
+              <img src='./images/4.png' class='card-img-top' 
+              alt='$product_title'>
+              </div>
+            </div>
+        </div>
 <!-- fetching products -->
     <?php
     // calling function
-get_products();
+  view_details();
 get_categories();
 get_brands();
     ?>

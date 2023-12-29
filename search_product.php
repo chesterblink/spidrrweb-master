@@ -36,10 +36,10 @@ include('functions/common_function.php');
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="display_all.php">Products</a>
+          <a class="nav-link" href="#">Products</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Register</a>
@@ -51,7 +51,7 @@ include('functions/common_function.php');
           <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         </li>
       </ul>
-      <form class="d-flex" action="search_product.php" method="get">
+      <form class="d-flex" action="" method="get">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search_data">
         <input type="submit" value="Search" class="btn btn-outline-light" name="search_data_product">
       </form>
@@ -84,7 +84,7 @@ include('functions/common_function.php');
 <!-- fetching products -->
     <?php
     // calling function
-get_products();
+search_product();
 get_categories();
 get_brands();
     ?>
@@ -117,8 +117,9 @@ getbrands();
 
 
 <!-- last child -->
-<!-- include footer -->
-<?php include("./includes/footer.php") ?>
+<div class="bg-info p-3 text-center">
+  <p>All Rights Reserved SPIDRR LLC © 2023 </p>
+</div>
     </div>
 
   <!-- bootstrap js link -->
