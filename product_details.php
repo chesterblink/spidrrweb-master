@@ -3,6 +3,14 @@
 include('includes/connect.php');
 include('functions/common_function.php');
 
+try {
+  $db = new mysqli($host, $user, $pass, $dbname); 
+} catch (Exception $e) {
+  echo "Error connecting to database: " . $e->getMessage();
+  exit;
+}
+
+
 
 ?>
 <!DOCTYPE html>
